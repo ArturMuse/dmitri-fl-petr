@@ -7,7 +7,6 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 140px;
 }
 
 .candidat *,
@@ -23,6 +22,7 @@ body {
 .candidat__list {
   max-width: 1200px;
   margin: auto;
+  margin-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,6 +184,15 @@ body {
   display: none;
 }
 
+.candidat__box-top {
+  margin-top: 0;
+}
+
+.candidat__box-top a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1330px) {
   .candidat__text {
     display: -webkit-box;
@@ -222,6 +231,12 @@ body {
 @media screen and (max-width: 850px) {
   .candidat__box {
     margin-top: 75px;
+  }
+  .candidat__box-top {
+    margin-top: 0;
+  }
+  .candidat__box-top p {
+    display: inline;
   }
   .candidat__box-after {
     -webkit-box-orient: vertical;

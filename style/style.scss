@@ -13,10 +13,10 @@ body {
         box-sizing: border-box;
         font-family: "Montserrat", sans-serif;
     }
-    padding-top: 140px;
     &__list {
         max-width: 1200px;
         margin: auto;
+        margin-top: 140px;
         display: flex;
         justify-content: space-between;
         list-style-type: none;
@@ -145,6 +145,13 @@ body {
         &-off {
             display: none;
         }
+        &-top {
+            margin-top: 0;
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
     }
 }
 @media screen and (max-width: 1330px) {
@@ -182,6 +189,12 @@ body {
     .candidat {
         &__box {
             margin-top: 75px;
+            &-top {
+                margin-top: 0;
+                p {
+                    display: inline;
+                }
+            }
             &-after {
                 flex-direction: column;
             }
